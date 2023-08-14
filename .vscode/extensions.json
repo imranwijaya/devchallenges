@@ -1,0 +1,11 @@
+{
+	"recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+		"esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "wix.vscode-import-cost",
+    "wakatime.vscode-wakatime",
+    "unifiedjs.vscode-mdx"
+	]
+}
