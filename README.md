@@ -20,7 +20,7 @@
 
 ## Overview
 
-Hi everyone 👋, this repository contains all my solutions for devChallenges.
+Hi everyone 👋, this repository contains all my solutions for devChallenges. You can view the demo [here](https://devchallenges-solutions.vercel.app/).
 
 ### Where can you see my work?
 
@@ -38,11 +38,11 @@ Solving this challenge was a great learning experience for me.
 ## Solutions
 
 - Responsive Web Developer
-  - [404 Not Found](https://github.com/imranwijaya/devchallenges/blob/main/app/%28responsive-web-developer%29/404-not-found/page.tsx)
-  - [My team page](https://github.com/imranwijaya/devchallenges/blob/main/app/%28responsive-web-developer%29/my-team-page/page.tsx)
-  - [Interior Consultant](https://github.com/imranwijaya/devchallenges/blob/main/app/%28responsive-web-developer%29/interior-consultant/page.tsx)
-  - [Recipe page](https://github.com/imranwijaya/devchallenges/blob/main/app/%28responsive-web-developer%29/recipe-page/page.tsx)
-  - [My Gallery](https://github.com/imranwijaya/devchallenges/blob/main/app/%28responsive-web-developer%29/my-gallery/page.tsx)
+  - [404 Not Found](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/404-not-found)
+  - [My team page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/my-team-page)
+  - [Interior Consultant](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/interior-consultant)
+  - [Recipe page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/recipe-page)
+  - [My Gallery](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/my-gallery)
   - [**TODO**] Checkout Page
   - [**TODO**] Edie homepage
   - [**TODO**] Portfolio

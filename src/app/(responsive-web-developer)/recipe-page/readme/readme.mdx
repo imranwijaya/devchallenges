@@ -6,9 +6,9 @@
 
 <div align="center">
   <h3>
-    <a href="https://your-demo-link.your-domain">Demo</a>
+    <a href="https://devchallenges-solutions.vercel.app/recipe-page">Demo</a>
     <span> | </span>
-    <a href="https://github.com/imranwijaya/devchallenges/blob/main/app/%28responsive-web-developer%29/recipe-page/page.tsx">Solution</a>
+    <a href="https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/recipe-page">Solution</a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">Challenge</a>
   </h3>
