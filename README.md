@@ -43,7 +43,7 @@ Solving this challenge was a great learning experience for me.
   - [Interior Consultant](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/interior-consultant)
   - [Recipe page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/recipe-page)
   - [My Gallery](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/my-gallery)
-  - [**TODO**] Checkout Page
+  - [Checkout Page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/checkout-page)
   - [**TODO**] Edie homepage
   - [**TODO**] Portfolio
 - [**TODO**] Front-end Developer

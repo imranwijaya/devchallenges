@@ -237,11 +237,12 @@ const Page: NextPage = () => {
                       e.step.map((el, i) => (
                         <li
                           key={i}
-                          className="flex flex-row gap-x-2 lg:gap-x-4"
+                          className="inline-flex items-start gap-x-2 lg:gap-x-4"
                         >
-                          <span>
-                            <div className="h-5 w-5 rounded-[0.25rem] border border-[#828282]"></div>
-                          </span>
+                          <input
+                            type="checkbox"
+                            className="mt-1 cursor-pointer rounded border-[#828282]"
+                          />
                           {el}
                         </li>
                       ))}

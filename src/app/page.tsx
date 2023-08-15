@@ -6,6 +6,7 @@ import myTeamPageDesktop from "@public/asset/screenshot/my-team-page-desktop.png
 import interiorConsultantDesktop from "@public/asset/screenshot/interior-consultant-desktop.png";
 import recipePageDesktop from "@public/asset/screenshot/recipe-page-desktop.png";
 import myGalleryDesktop from "@public/asset/screenshot/my-gallery-desktop.png";
+import checkoutPageDesktop from "@public/asset/screenshot/checkout-page-desktop.png";
 
 type Page = {
   name: string;
@@ -51,6 +52,13 @@ const rwdPages: Page[] = [
     section: "Responsive Web Developer",
     image: myGalleryDesktop,
     readmeHref: "/my-gallery/readme",
+  },
+  {
+    name: "Checkout Page",
+    href: "/checkout-page",
+    section: "Responsive Web Developer",
+    image: checkoutPageDesktop,
+    readmeHref: "/checkout-page/readme",
   },
 ];
 const fePages: Page[] = [];
