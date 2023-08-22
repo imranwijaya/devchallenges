@@ -9,6 +9,7 @@ import {
   Playfair_Display,
   Source_Code_Pro,
   Noto_Sans,
+  Heebo,
 } from "next/font/google";
 
 /** used in
@@ -40,7 +41,12 @@ export const inconsolata = Inconsolata({
   variable: "--font-inconsolata",
 });
 
-/** used in `~/my-team-page/layout.tsx` */
+/** used in
+ * 
+ * `~/my-team-page/layout.tsx`
+ * 
+ * `~/edie-homepage/layout.tsx`
+ */
 export const poppins = Poppins({
   weight: "400",
   subsets: ["latin"],
@@ -89,5 +95,13 @@ export const notoSans = Noto_Sans({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-noto-sans",
+  style: "normal",
+});
+
+/** used in `~/edie-homepage/layout.tsx` */
+export const heebo = Heebo({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-heebo",
   style: "normal",
 });

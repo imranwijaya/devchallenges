@@ -60,6 +60,13 @@ const rwdPages: Page[] = [
     image: checkoutPageDesktop,
     readmeHref: "/checkout-page/readme",
   },
+  {
+    name: "Edie homepage",
+    href: "/edie-homepage",
+    section: "Responsive Web Developer",
+    image: checkoutPageDesktop,
+    readmeHref: "/edie-homepage/readme",
+  },
 ];
 const fePages: Page[] = [];
 const fsPages: Page[] = [];

@@ -19,6 +19,7 @@ const config: Config = {
         "playfair-display": ["var(--font-playfair-display)"],
         "source-code-pro": ["var(--font-source-code-pro)"],
         "noto-sans": ["var(--font-noto-sans)"],
+        heebo: ["var(-font-heebo)"],
       },
     },
   },
