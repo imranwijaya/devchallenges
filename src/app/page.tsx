@@ -7,6 +7,8 @@ import interiorConsultantDesktop from "@public/asset/screenshot/interior-consult
 import recipePageDesktop from "@public/asset/screenshot/recipe-page-desktop.png";
 import myGalleryDesktop from "@public/asset/screenshot/my-gallery-desktop.png";
 import checkoutPageDesktop from "@public/asset/screenshot/checkout-page-desktop.png";
+import edieHomepageDesktop from "@public/asset/screenshot/edie-homepage-desktop.png";
+import portfolioDesktop from "@public/asset/screenshot/portfolio-desktop.png";
 
 type Page = {
   name: string;
@@ -64,8 +66,15 @@ const rwdPages: Page[] = [
     name: "Edie homepage",
     href: "/edie-homepage",
     section: "Responsive Web Developer",
-    image: checkoutPageDesktop,
+    image: edieHomepageDesktop,
     readmeHref: "/edie-homepage/readme",
+  },
+  {
+    name: "Portfolio",
+    href: "/portfolio",
+    section: "Responsive Web Developer",
+    image: portfolioDesktop,
+    readmeHref: "/portfolio/readme",
   },
 ];
 const fePages: Page[] = [];
