@@ -20,4 +20,243 @@
   .writing-vertical-lr {
     writing-mode: vertical-lr;
   }
+
+  /** BUTTON COMPONENT */
+  .btn-variable {
+    /** DEFAULT COLOR */
+    --default-color: rgba(224, 224, 224, 1);
+    --default-color-light: rgba(174, 174, 174, 0.25);
+    --default-color-dark: rgba(174, 174, 174, 1);
+    --default-text: rgba(63, 63, 63, 1);
+    --default-text-disabled: rgba(158, 158, 158, 1);
+    --default-box-shadow: 0px 2px 3px 0px rgba(51, 51, 51, 0.2);
+    /** PRIMARY COLOR */
+    --primary-color: rgba(61, 90, 254, 1);
+    --primary-color-light: rgba(41, 98, 255, 0.1);
+    --primary-color-dark: rgba(0, 57, 203, 1);
+    --primary-text: rgba(255, 255, 255, 1);
+    --primary-text-disabled: rgba(255, 255, 255, 1);
+    --primary-box-shadow: 0px 2px 3px 0px rgba(41, 98, 255, 0.2);
+    /** SECONDARY COLOR */
+    --secondary-color: rgba(69, 90, 100, 1);
+    --secondary-color-light: rgba(28, 49, 58, 0.25);
+    --secondary-color-dark: rgba(28, 49, 58, 1);
+    --secondary-text: rgba(255, 255, 255, 1);
+    --secondary-text-disabled: rgba(255, 255, 255, 1);
+    --secondary-box-shadow: 0px 2px 3px 0px rgba(69, 90, 100, 0.2);
+    /** DANGER COLOR */
+    --danger-color: rgba(211, 47, 47, 1);
+    --danger-color-light: rgba(154, 0, 7, 0.25);
+    --danger-color-dark: rgba(154, 0, 7, 1);
+    --danger-text: rgba(255, 255, 255, 1);
+    --danger-text-disabled: rgba(255, 255, 255, 1);
+    --danger-box-shadow: 0px 2px 3px 0px rgba(211, 47, 47, 0.2);
+  }
+
+  /**
+   * SOLID BUTTON
+   */
+
+  /* default color */
+  .btn {
+    @apply inline-flex shrink-0 select-none flex-row flex-wrap content-center items-center gap-x-2 rounded-md bg-[--default-color] px-4 py-2 text-center text-sm font-medium text-[--default-text] shadow-[0px_2px_3px_0px_rgba(51,51,51,0.2)];
+  }
+  .btn:hover:not(:disabled),
+  .btn:focus:not(:disabled) {
+    @apply hover:bg-[--default-color-dark] focus:bg-[--default-color-dark];
+  }
+  .btn.hovered,
+  .btn-focused {
+    @apply bg-[--default-color-dark];
+  }
+  .btn:disabled {
+    @apply text-[--default-text-disabled];
+  }
+
+  /* primary color */
+  .btn.btn-primary {
+    @apply bg-[--primary-color] text-[--primary-text] shadow-[0px_2px_3px_0px_rgba(41,98,255,0.2)];
+  }
+  .btn.btn-primary:hover:not(:disabled),
+  .btn.btn-primary:focus:not(:disabled) {
+    @apply hover:bg-[--primary-color-dark] focus:bg-[--primary-color-dark];
+  }
+  .btn.btn-primary.hovered,
+  .btn.btn-primary.focused {
+    @apply bg-[--primary-color-dark];
+  }
+  .btn.btn-primary:disabled {
+    @apply text-[--primary-text-disabled];
+  }
+
+  /* secondary color */
+  .btn.btn-secondary {
+    @apply bg-[--secondary-color] text-[--secondary-text] shadow-[0px_2px_3px_0px_rgba(69,90,100,0.2)];
+  }
+  .btn.btn-secondary:hover:not(:disabled),
+  .btn.btn-secondary:focus:not(:disabled) {
+    @apply hover:bg-[--secondary-color-dark] focus:bg-[--secondary-color-dark];
+  }
+  .btn.btn-secondary.hovered,
+  .btn.btn-secondary.focused {
+    @apply bg-[--secondary-color-dark];
+  }
+  .btn.btn-secondary:disabled {
+    @apply text-[--secondary-text-disabled];
+  }
+
+  /* danger color */
+  .btn.btn-danger {
+    @apply bg-[--danger-color] text-[--danger-text] shadow-[0px_2px_3px_0px_rgba(211,47,47,0.2)];
+  }
+  .btn.btn-danger:hover:not(:disabled),
+  .btn.btn-danger:focus:not(:disabled) {
+    @apply hover:bg-[--danger-color-dark] focus:bg-[--danger-color-dark];
+  }
+  .btn.btn-danger.hovered,
+  .btn.btn-danger.focused {
+    @apply bg-[--danger-color-dark];
+  }
+  .btn.btn-danger:disabled {
+    @apply text-[--danger-text-disabled];
+  }
+
+  /**
+   * OUTLINE BUTTON
+   */
+
+  /* default color */
+  .btn.btn-outline {
+    @apply border border-[--default-color] bg-transparent shadow-transparent;
+  }
+  .btn.btn-outline:hover:not(:disabled),
+  .btn.btn-outline:focus:not(:disabled) {
+    @apply hover:bg-[--default-color-light] focus:bg-[--default-color-light];
+  }
+  .btn.btn-outline.hovered,
+  .btn.btn-outline.focused {
+    @apply bg-[--default-color-light];
+  }
+
+  /* primary color */
+  .btn.btn-outline.btn-primary {
+    @apply border-[--primary-color] text-[--primary-color];
+  }
+  .btn.btn-outline.btn-primary:hover:not(:disabled),
+  .btn.btn-outline.btn-primary:focus:not(:disabled) {
+    @apply hover:bg-[--primary-color-light] focus:bg-[--primary-color-light];
+  }
+  .btn.btn-outline.btn-primary.hovered,
+  .btn.btn-outline.btn-primary.focused {
+    @apply bg-[--primary-color-light];
+  }
+
+  /* secondary color */
+  .btn.btn-outline.btn-secondary {
+    @apply border-[--secondary-color] text-[--secondary-color];
+  }
+  .btn.btn-outline.btn-secondary:hover:not(:disabled),
+  .btn.btn-outline.btn-secondary:focus:not(:disabled) {
+    @apply hover:bg-[--secondary-color-light] focus:bg-[--secondary-color-light];
+  }
+  .btn.btn-outline.btn-secondary.hovered,
+  .btn.btn-outline.btn-secondary.focused {
+    @apply bg-[--secondary-color-light];
+  }
+
+  /* danger color */
+  .btn.btn-outline.btn-danger {
+    @apply border-[--danger-color] text-[--danger-color];
+  }
+  .btn.btn-outline.btn-danger:hover:not(:disabled),
+  .btn.btn-outline.btn-danger:focus:not(:disabled) {
+    @apply hover:bg-[--danger-color-light] focus:bg-[--danger-color-light];
+  }
+  .btn.btn-outline.btn-danger.hovered,
+  .btn.btn-outline.btn-danger.focused {
+    @apply bg-[--danger-color-light];
+  }
+
+  /**
+   * TEXT BUTTON
+   */
+
+  /* default color */
+  .btn.btn-text {
+    @apply border-transparent bg-transparent shadow-transparent;
+  }
+  .btn.btn-text:hover:not(:disabled),
+  .btn.btn-text:focus:not(:disabled) {
+    @apply hover:bg-[--default-color-light] focus:bg-[--default-color-light];
+  }
+  .btn.btn-text.hovered,
+  .btn.btn-text.focused {
+    @apply bg-[--default-color-light];
+  }
+
+  /* primary color */
+  .btn.btn-text.btn-primary {
+    @apply text-[--primary-color];
+  }
+  .btn.btn-text.btn-primary:hover:not(:disabled),
+  .btn.btn-text.btn-primary:focus:not(:disabled) {
+    @apply hover:bg-[--primary-color-light] focus:bg-[--primary-color-light];
+  }
+  .btn.btn-text.btn-primary.hovered,
+  .btn.btn-text.btn-primary.focused {
+    @apply bg-[--primary-color-light];
+  }
+
+  /* secondary color */
+  .btn.btn-text.btn-secondary {
+    @apply text-[--secondary-color];
+  }
+  .btn.btn-text.btn-secondary:hover:not(:disabled),
+  .btn.btn-text.btn-secondary:focus:not(:disabled) {
+    @apply hover:bg-[--secondary-color-light] focus:bg-[--secondary-color-light];
+  }
+  .btn.btn-text.btn-secondary.hovered,
+  .btn.btn-text.btn-secondary.focused {
+    @apply bg-[--secondary-color-light];
+  }
+
+  /* danger color */
+  .btn.btn-text.btn-danger {
+    @apply text-[--danger-color];
+  }
+  .btn.btn-text.btn-danger:hover:not(:disabled),
+  .btn.btn-text.btn-danger:focus:not(:disabled) {
+    @apply hover:bg-[--danger-color-light] focus:bg-[--danger-color-light];
+  }
+  .btn.btn-text.btn-danger.hovered,
+  .btn.btn-text.btn-danger.focused {
+    @apply bg-[--danger-color-light];
+  }
+
+  /**
+   * BUTTON SIZE
+   */
+
+  /* small size */
+  .btn.btn-sm {
+    @apply px-3 py-1;
+  }
+  .btn.btn-md {
+    @apply px-4 py-2;
+  }
+  .btn.btn-lg {
+    @apply px-5 py-3;
+  }
+
+  .material-icons {
+    @apply text-sm !important;
+  }
+
+  /**
+   * SHADOW
+   */
+
+  .btn.no-shadow {
+    @apply shadow-transparent;
+  }
 }

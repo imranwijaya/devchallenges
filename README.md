@@ -38,15 +38,16 @@ Solving this challenge was a great learning experience for me.
 ## Solutions
 
 - Responsive Web Developer
-  - [404 Not Found](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/404-not-found)
-  - [My team page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/my-team-page)
-  - [Interior Consultant](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/interior-consultant)
-  - [Recipe page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/recipe-page)
-  - [My Gallery](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/my-gallery)
-  - [Checkout Page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/(responsive-web-developer)/checkout-page)
-  - [**TODO**] Edie homepage
-  - [**TODO**] Portfolio
-- [**TODO**] Front-end Developer
+  - [404 Not Found](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/404-not-found)
+  - [My team page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/my-team-page)
+  - [Interior Consultant](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/interior-consultant)
+  - [Recipe page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/recipe-page)
+  - [My Gallery](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/my-gallery)
+  - [Checkout Page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/checkout-page)
+  - [Edie homepage](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/edie-homepage)
+  - [Portfolio](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/portfolio)
+- Front-end Developer
+  - [Button component](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/button-component)
 - [**TODO**] Full-stack Developer
 
 ## Contact

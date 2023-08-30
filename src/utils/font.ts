@@ -10,6 +10,8 @@ import {
   Source_Code_Pro,
   Noto_Sans,
   Heebo,
+  Noto_Sans_JP,
+  Ubuntu_Mono,
 } from "next/font/google";
 
 /** used in
@@ -42,10 +44,12 @@ export const inconsolata = Inconsolata({
 });
 
 /** used in
- * 
+ *
  * `~/my-team-page/layout.tsx`
- * 
+ *
  * `~/edie-homepage/layout.tsx`
+ *
+ * `~/button-component/layout.tsx`
  */
 export const poppins = Poppins({
   weight: "400",
@@ -103,5 +107,20 @@ export const heebo = Heebo({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-heebo",
+  style: "normal",
+});
+
+/** used in ``~/button-component/layout.tsx */
+export const notoSansJp = Noto_Sans_JP({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+  style: "normal",
+});
+/** used in ``~/button-component/layout.tsx */
+export const ubuntuMono = Ubuntu_Mono({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-ubuntu-mono",
   style: "normal",
 });
