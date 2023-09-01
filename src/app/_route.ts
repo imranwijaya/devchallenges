@@ -247,11 +247,29 @@ export const routesObject: RouteObject = {
           demoLink:
             "https://devchallenges-solutions.vercel.app/front-end-developer/button-component",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/404-not-found",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/button-component",
           screenshotLink:
             "/asset/front-end-developer/screenshot/button-component-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/button-component-desktop.png",
+        },
+      },
+      inputComponent: {
+        name: "Input component",
+        href: "/front-end-developer/input-component",
+        exact: true,
+        section: "Front-end Developer",
+        image: buttonComponentDesktop,
+        readmeHref: "/front-end-developer/input-component/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/input-component",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/input-component",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/input-component-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/input-component-desktop.png",
         },
       },
     },
@@ -435,11 +453,29 @@ export const routesArray: RouteArray = {
           demoLink:
             "https://devchallenges-solutions.vercel.app/front-end-developer/button-component",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/404-not-found",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/button-component",
           screenshotLink:
             "/asset/front-end-developer/screenshot/button-component-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/button-component-desktop.png",
+        },
+      },
+      {
+        name: "Input component",
+        href: "/front-end-developer/input-component",
+        exact: true,
+        section: "Front-end Developer",
+        image: buttonComponentDesktop,
+        readmeHref: "/front-end-developer/input-component/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/input-component",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/input-component",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/input-component-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/input-component-desktop.png",
         },
       },
     ],

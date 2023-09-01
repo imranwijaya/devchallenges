@@ -21,7 +21,7 @@
     writing-mode: vertical-lr;
   }
 
-  /** BUTTON COMPONENT */
+  /** ================================ BUTTON ======================================== */
   .btn-variable {
     /** DEFAULT COLOR */
     --default-color: rgba(224, 224, 224, 1);
@@ -241,14 +241,19 @@
   .btn.btn-sm {
     @apply px-3 py-1;
   }
+  /* medium size */
   .btn.btn-md {
     @apply px-4 py-2;
   }
+  /* large size */
   .btn.btn-lg {
     @apply px-5 py-3;
   }
 
-  .material-icons {
+  /**
+   * BUTTON ICON
+   */
+  .btn .material-icons {
     @apply text-sm !important;
   }
 
@@ -258,5 +263,170 @@
 
   .btn.no-shadow {
     @apply shadow-transparent;
+  }
+
+  /** =================================INPUT========================================= */
+  .input-variable {
+    /* default color */
+    --input-default-text: rgba(51, 51, 51, 1);
+    --input-default-text-placeholder: rgba(130, 130, 130, 1);
+    --input-default-bg: rgba(242, 242, 242, 0);
+    --input-default-bg-disabled: rgba(242, 242, 242, 1);
+    --input-default-border: rgba(130, 130, 130, 1);
+    --input-default-border-disabled: rgba(224, 224, 224, 1);
+    --input-default-hover: rgba(51, 51, 51, 1);
+    --input-default-focus: rgba(41, 98, 255, 1);
+    /* error color */
+    --input-error-text: rgba(51, 51, 51, 1);
+    --input-error-text-placeholder: rgba(130, 130, 130, 1);
+    --input-error-bg: rgba(242, 242, 242, 0);
+    --input-error-bg-disabled: rgba(242, 242, 242, 1);
+    --input-error-border: rgba(211, 47, 47, 1);
+    --input-error-border-disabled: rgba(211, 47, 47, 1);
+    --input-error-hover: rgba(51, 51, 51, 1);
+    --input-error-focus: rgba(211, 47, 47, 1);
+  }
+  .input-icon-variable {
+    /* default color */
+    --icon-default-text: rgba(130, 130, 130, 1);
+    --icon-default-hover: rgba(51, 51, 51, 1);
+    --icon-default-focus: rgba(41, 98, 255, 1);
+    /* error color */
+    --icon-error-text: rgba(51, 51, 51, 1);
+    --icon-error-hover: rgba(51, 51, 51, 1);
+    --icon-error-focus: rgba(211, 47, 47, 1);
+  }
+  .input-label-variable {
+    /* default color */
+    --label-default-text: rgba(51, 51, 51, 1);
+    --label-default-text-alt: rgba(130, 130, 130, 1);
+    --label-default-hover: rgba(51, 51, 51, 1);
+    --label-default-focus: rgba(41, 98, 255, 1);
+    /* error color */
+    --label-error-text: rgba(211, 47, 47, 1);
+    --label-error-text-alt: rgba(211, 47, 47, 1);
+    --label-error-hover: rgba(51, 51, 51, 1);
+    --label-error-focus: rgba(211, 47, 47, 1);
+  }
+
+  .input-group {
+    @apply relative inline-block w-full md:w-min;
+  }
+  .input-group.full-width {
+    @apply w-full md:w-full;
+  }
+
+  /**
+   * INPUT
+   */
+
+  /* default color */
+  .input {
+    @apply w-full rounded-lg border border-[--input-default-border] px-3 py-4 text-sm font-medium placeholder:text-sm placeholder:text-[--input-default-text-placeholder] md:w-[unset];
+  }
+  .input:hover:not(:disabled) {
+    @apply hover:border-[--input-default-hover];
+  }
+  .input:focus:not(:disabled) {
+    @apply focus:border-[--input-default-focus] focus:outline-none focus:ring-0 focus:ring-[--input-default-focus];
+  }
+  .input.hovered {
+    @apply border-[--input-default-hover];
+  }
+  .input.focused {
+    @apply border-[--input-default-focus];
+  }
+  .input:disabled {
+    @apply border-[--input-default-border-disabled] bg-[--input-default-bg-disabled];
+  }
+
+  /**
+   * INPUT ERROR
+   */
+  .input.input-error {
+    @apply border-[--input-error-border];
+  }
+  .input.input-error:focus:not(:disabled) {
+    @apply focus:border-[--input-error-border] focus:outline-none focus:ring-0 focus:ring-[--input-error-border];
+  }
+  .input.input-error.hovered {
+    @apply border-[--input-error-hover];
+  }
+  .input.input-error.focused {
+    @apply border-[--input-error-focus];
+  }
+  .input.input-error:disabled {
+    @apply bg-[--input-error-bg-disabled];
+  }
+
+  /**
+   * INPUT SIZE
+   */
+
+  /* small size */
+  .input.input-sm {
+    @apply px-3 py-2;
+  }
+  /* medium size */
+  .input.input-md {
+    @apply px-3 py-4;
+  }
+  /* large size */
+  .input.input-lg {
+    @apply px-3 py-6;
+  }
+
+  /**
+   * INPUT COMPONENT
+   */
+
+  /* full width */
+  .input.full-width {
+    @apply w-full md:w-full;
+  }
+  /* icon start */
+  .input.icon-start {
+    @apply pl-10;
+  }
+  /* icon end */
+  .input.icon-end {
+    @apply pr-10;
+  }
+
+  /**
+   * INPUT LABEL
+   */
+
+  /* default color */
+  .label {
+    @apply flex select-none items-center justify-between;
+  }
+  .label-text {
+    @apply text-xs text-[--label-default-text] group-focus-within/input:text-[--label-default-focus] group-[.focused]/input:text-[--label-default-focus];
+  }
+  .label-text-alt {
+    @apply text-[0.625rem] text-[--label-default-text-alt];
+  }
+
+  /* error color */
+  .label-text.label-error {
+    @apply text-[--label-error-text] group-focus-within/input:text-[--label-error-focus] group-[.focused]/input:text-[--label-error-focus] group-[.hovered]/input:text-[--label-error-hover];
+  }
+  .label-text-alt.label-error {
+    @apply text-[--label-error-text-alt];
+  }
+
+  /** INPUT ICON */
+  .input-icon {
+    @apply pointer-events-none absolute top-1/2 h-5 w-5 -translate-y-1/2 transform text-[--icon-default-text] group-focus-within/input:text-[--icon-default-focus] group-[.focused]/input:text-[--icon-default-focus];
+  }
+  .input-icon.input-icon-error {
+    @apply text-[--icon-error-text] group-focus-within/input:text-[--iconn-error-focus] group-[.focused]/input:text-[--icon-error-focus] group-[.hovered]/input:text-[--icon-error-hover];
+  }
+  .input-icon.start {
+    @apply left-3;
+  }
+  .input-icon.end {
+    @apply right-3;
   }
 }

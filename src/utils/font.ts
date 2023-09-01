@@ -50,6 +50,8 @@ export const inconsolata = Inconsolata({
  * `~/edie-homepage/layout.tsx`
  *
  * `~/button-component/layout.tsx`
+ * 
+ * `~/input-component/layout.tsx`
  */
 export const poppins = Poppins({
   weight: "400",
@@ -110,14 +112,24 @@ export const heebo = Heebo({
   style: "normal",
 });
 
-/** used in ``~/button-component/layout.tsx */
+/** used in
+ * 
+ * `~/button-component/layout.tsx`
+ * 
+ * `~/input-component/layout.tsx`
+ */
 export const notoSansJp = Noto_Sans_JP({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-noto-sans-jp",
   style: "normal",
 });
-/** used in ``~/button-component/layout.tsx */
+/** used in
+ * 
+ * `~/button-component/layout.tsx`
+ * 
+ * `~/input-component/layout.tsx`
+ */
 export const ubuntuMono = Ubuntu_Mono({
   weight: "400",
   subsets: ["latin"],
