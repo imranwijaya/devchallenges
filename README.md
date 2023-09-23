@@ -49,6 +49,7 @@ Solving this challenge was a great learning experience for me.
 - Front-end Developer
   - [Button component](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/button-component)
   - [Input component](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/input-component)
+  - [Windbnb](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/windbnb)
 - [**TODO**] Full-stack Developer
 
 ## Contact

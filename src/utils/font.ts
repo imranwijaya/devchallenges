@@ -12,6 +12,7 @@ import {
   Heebo,
   Noto_Sans_JP,
   Ubuntu_Mono,
+  Mulish,
 } from "next/font/google";
 
 /** used in
@@ -21,6 +22,8 @@ import {
  * `~/interior-consultant/layout.tsx`
  *
  * `~/recipe-page/layout.tsx`
+ *
+ * `~/windbnb/layout.tsx`
  */
 export const monsterrat = Montserrat({
   weight: "400",
@@ -50,7 +53,7 @@ export const inconsolata = Inconsolata({
  * `~/edie-homepage/layout.tsx`
  *
  * `~/button-component/layout.tsx`
- * 
+ *
  * `~/input-component/layout.tsx`
  */
 export const poppins = Poppins({
@@ -113,9 +116,9 @@ export const heebo = Heebo({
 });
 
 /** used in
- * 
+ *
  * `~/button-component/layout.tsx`
- * 
+ *
  * `~/input-component/layout.tsx`
  */
 export const notoSansJp = Noto_Sans_JP({
@@ -125,14 +128,22 @@ export const notoSansJp = Noto_Sans_JP({
   style: "normal",
 });
 /** used in
- * 
+ *
  * `~/button-component/layout.tsx`
- * 
+ *
  * `~/input-component/layout.tsx`
  */
 export const ubuntuMono = Ubuntu_Mono({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-ubuntu-mono",
+  style: "normal",
+});
+
+/** used in `~/windbnb/layout.tsx` */
+export const mulish = Mulish({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-mulish",
   style: "normal",
 });

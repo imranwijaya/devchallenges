@@ -10,6 +10,7 @@ import edieHomepageDesktop from "@public/asset/responsive-web-developer/screensh
 import portfolioDesktop from "@public/asset/responsive-web-developer/screenshot/portfolio-desktop.png";
 // FRONT-END DEVELOPER
 import buttonComponentDesktop from "@public/asset/front-end-developer/screenshot/button-component-desktop.png";
+import windbnbDesktop from "@public/asset/front-end-developer/screenshot/windbnb-desktop.png";
 
 type ResponsiveWebDeveloper =
   | "notFound"
@@ -270,6 +271,24 @@ export const routesObject: RouteObject = {
             "/asset/front-end-developer/screenshot/input-component-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/input-component-desktop.png",
+        },
+      },
+      windbnb: {
+        name: "Windbnb",
+        href: "/front-end-developer/windbnb",
+        exact: true,
+        section: "Front-end Developer",
+        image: windbnbDesktop,
+        readmeHref: "/front-end-developer/windbnb/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/windbnb",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/windbnb",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/windbnb-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/windbnb-desktop.png",
         },
       },
     },

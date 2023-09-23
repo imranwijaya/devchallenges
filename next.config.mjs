@@ -3,7 +3,11 @@ import rehypeSlug from "rehype-slug";
 import createMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
+  },
+};
 
 const withMDX = createMDX({
   options: {
