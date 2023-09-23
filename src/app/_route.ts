@@ -497,6 +497,24 @@ export const routesArray: RouteArray = {
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/input-component-desktop.png",
         },
       },
+      {
+        name: "Windbnb",
+        href: "/front-end-developer/windbnb",
+        exact: true,
+        section: "Front-end Developer",
+        image: windbnbDesktop,
+        readmeHref: "/front-end-developer/windbnb/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/windbnb",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/windbnb",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/windbnb-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/windbnb-desktop.png",
+        },
+      },
     ],
   },
   fullStackDeveloper: {
