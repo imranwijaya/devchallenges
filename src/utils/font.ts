@@ -13,6 +13,7 @@ import {
   Noto_Sans_JP,
   Ubuntu_Mono,
   Mulish,
+  Raleway,
 } from "next/font/google";
 
 /** used in
@@ -24,6 +25,8 @@ import {
  * `~/recipe-page/layout.tsx`
  *
  * `~/windbnb/layout.tsx`
+ * 
+ * `~/todo-app/layout.tsx`
  */
 export const monsterrat = Montserrat({
   weight: "400",
@@ -145,5 +148,13 @@ export const mulish = Mulish({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-mulish",
+  style: "normal",
+});
+
+/** used in `~/todo-app/layout.tsx` */
+export const raleway = Raleway({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-raleway",
   style: "normal",
 });

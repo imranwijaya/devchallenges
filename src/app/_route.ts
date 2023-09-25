@@ -11,6 +11,7 @@ import portfolioDesktop from "@public/asset/responsive-web-developer/screenshot/
 // FRONT-END DEVELOPER
 import buttonComponentDesktop from "@public/asset/front-end-developer/screenshot/button-component-desktop.png";
 import windbnbDesktop from "@public/asset/front-end-developer/screenshot/windbnb-desktop.png";
+import todoAppDesktop from "@public/asset/front-end-developer/screenshot/todo-app-desktop.png";
 
 type ResponsiveWebDeveloper =
   | "notFound"
@@ -291,6 +292,24 @@ export const routesObject: RouteObject = {
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/windbnb-desktop.png",
         },
       },
+      todoApp: {
+        name: "Todo app",
+        href: "/front-end-developer/todo-app",
+        exact: true,
+        section: "Front-end Developer",
+        image: todoAppDesktop,
+        readmeHref: "/front-end-developer/todo-app/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/todo-app",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/todo-app",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/todo-app-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/todo-app-desktop.png",
+        },
+      },
     },
   },
   fullStackDeveloper: {
@@ -513,6 +532,24 @@ export const routesArray: RouteArray = {
             "/asset/front-end-developer/screenshot/windbnb-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/windbnb-desktop.png",
+        },
+      },
+      {
+        name: "Todo app",
+        href: "/front-end-developer/todo-app",
+        exact: true,
+        section: "Front-end Developer",
+        image: todoAppDesktop,
+        readmeHref: "/front-end-developer/todo-app/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/todo-app",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/todo-app",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/todo-app-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/todo-app-desktop.png",
         },
       },
     ],

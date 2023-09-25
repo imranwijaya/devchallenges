@@ -23,6 +23,7 @@ const config: Config = {
         "noto-sans-jp": ["var(--font-noto-sans-jp)"],
         "ubuntu-mono": ["var(--font-ubuntu-mono)"],
         mulish: ["var(--font-mulish)"],
+        raleway: ["var(--font-raleway)"],
       },
     },
   },
