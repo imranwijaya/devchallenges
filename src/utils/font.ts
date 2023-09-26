@@ -151,7 +151,12 @@ export const mulish = Mulish({
   style: "normal",
 });
 
-/** used in `~/todo-app/layout.tsx` */
+/** used in
+ * 
+ * `~/todo-app/layout.tsx`
+ * 
+ * `~/random-quote-generator/layout.tsx`
+ */
 export const raleway = Raleway({
   weight: "400",
   subsets: ["latin"],

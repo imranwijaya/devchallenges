@@ -12,6 +12,7 @@ import portfolioDesktop from "@public/asset/responsive-web-developer/screenshot/
 import buttonComponentDesktop from "@public/asset/front-end-developer/screenshot/button-component-desktop.png";
 import windbnbDesktop from "@public/asset/front-end-developer/screenshot/windbnb-desktop.png";
 import todoAppDesktop from "@public/asset/front-end-developer/screenshot/todo-app-desktop.png";
+import randomQuoteGeneratorDesktop from "@public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png";
 
 type ResponsiveWebDeveloper =
   | "notFound"
@@ -310,6 +311,24 @@ export const routesObject: RouteObject = {
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/todo-app-desktop.png",
         },
       },
+      randomQuoteGenerator: {
+        name: "Random quote generator",
+        href: "/front-end-developer/random-quote-generator",
+        exact: true,
+        section: "Front-end Developer",
+        image: randomQuoteGeneratorDesktop,
+        readmeHref: "/front-end-developer/random-quote-generator/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/random-quote-generator",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/random-quote-generator",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
+        },
+      },
     },
   },
   fullStackDeveloper: {
@@ -550,6 +569,24 @@ export const routesArray: RouteArray = {
             "/asset/front-end-developer/screenshot/todo-app-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/todo-app-desktop.png",
+        },
+      },
+      {
+        name: "Random quote generator",
+        href: "/front-end-developer/random-quote-generator",
+        exact: true,
+        section: "Front-end Developer",
+        image: randomQuoteGeneratorDesktop,
+        readmeHref: "/front-end-developer/random-quote-generator/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/random-quote-generator",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/random-quote-generator",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
         },
       },
     ],
