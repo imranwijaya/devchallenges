@@ -10,6 +10,8 @@ import {
   useEffect,
   useMemo,
   useState,
+  Dispatch,
+  SetStateAction,
 } from "react";
 
 type ContextProps = {
@@ -25,6 +27,18 @@ type ContextProps = {
   isAnswerCorrect: boolean;
   score: number;
   currentQuestion: Question | null;
+  setIsLoading: Dispatch<SetStateAction<boolean>>;
+  setIsSuccess: Dispatch<SetStateAction<boolean>>;
+  setIsError: Dispatch<SetStateAction<boolean>>;
+  setQuestions: Dispatch<SetStateAction<Question[]>>;
+  setStart: Dispatch<SetStateAction<boolean>>;
+  setStop: Dispatch<SetStateAction<boolean>>;
+  setNumber: Dispatch<SetStateAction<number>>;
+  setSelectedAnswer: Dispatch<SetStateAction<string>>;
+  setIsAnswerSelected: Dispatch<SetStateAction<boolean>>;
+  setIsAnswerCorrect: Dispatch<SetStateAction<boolean>>;
+  setScore: Dispatch<SetStateAction<number>>;
+  setCurrentQuestion: Dispatch<SetStateAction<Question | null>>;
   handleStart: () => void;
   handleAnswer: (answer: string) => void;
   handleNextQuestion: () => void;
@@ -45,6 +59,18 @@ export const QuestionContext = createContext<ContextProps>({
   isAnswerSelected: false,
   score: 0,
   currentQuestion: null,
+  setIsLoading: () => {},
+  setIsSuccess: () => {},
+  setIsError: () => {},
+  setQuestions: () => {},
+  setStart: () => {},
+  setStop: () => {},
+  setNumber: () => {},
+  setSelectedAnswer: () => {},
+  setIsAnswerSelected: () => {},
+  setIsAnswerCorrect: () => {},
+  setScore: () => {},
+  setCurrentQuestion: () => {},
   handleStart: () => {},
   handleAnswer: () => {},
   handleNextQuestion: () => {},
@@ -189,6 +215,18 @@ export const QuestionProvider: NextPage<ProviderProps> = ({
       isAnswerCorrect: _isAnswerCorrect,
       score: _score,
       currentQuestion: _currentQuestion,
+      setIsLoading,
+      setIsSuccess,
+      setIsError,
+      setQuestions,
+      setStart,
+      setStop,
+      setNumber,
+      setSelectedAnswer,
+      setIsAnswerSelected,
+      setIsAnswerCorrect,
+      setScore,
+      setCurrentQuestion,
       handleStart,
       handleAnswer,
       handleNextQuestion,
