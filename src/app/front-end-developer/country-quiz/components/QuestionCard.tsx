@@ -81,8 +81,7 @@ const QuestionCard: NextPage = () => {
                         : "text-[rgba(96,102,208,0.8)]"
                     } delay-75 group-enabled:group-hover:text-white group-aria-selected:text-white`}
                   >
-                    {e}&nbsp;
-                    {e === currentQuestion.answer && "(v)"}
+                    {e}
                   </p>
                   {isAnswerSelected ? (
                     <>
