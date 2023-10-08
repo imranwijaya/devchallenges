@@ -13,6 +13,7 @@ import buttonComponentDesktop from "@public/asset/front-end-developer/screenshot
 import windbnbDesktop from "@public/asset/front-end-developer/screenshot/windbnb-desktop.png";
 import todoAppDesktop from "@public/asset/front-end-developer/screenshot/todo-app-desktop.png";
 import randomQuoteGeneratorDesktop from "@public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png";
+import countryQuizDesktop from "@public/asset/front-end-developer/screenshot/country-quiz-desktop.png";
 
 type ResponsiveWebDeveloper =
   | "notFound"
@@ -329,6 +330,24 @@ export const routesObject: RouteObject = {
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
         },
       },
+      countryQuiz: {
+        name: "Country quiz",
+        href: "/front-end-developer/country-quiz",
+        exact: true,
+        section: "Front-end Developer",
+        image: countryQuizDesktop,
+        readmeHref: "/front-end-developer/country-quiz/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/country-quiz",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/country-quiz",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/country-quiz-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/country-quiz-desktop.png",
+        },
+      },
     },
   },
   fullStackDeveloper: {
@@ -587,6 +606,24 @@ export const routesArray: RouteArray = {
             "/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
+        },
+      },
+      {
+        name: "Country quiz",
+        href: "/front-end-developer/country-quiz",
+        exact: true,
+        section: "Front-end Developer",
+        image: countryQuizDesktop,
+        readmeHref: "/front-end-developer/country-quiz/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/front-end-developer/country-quiz",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/country-quiz",
+          screenshotLink:
+            "/asset/front-end-developer/screenshot/country-quiz-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/country-quiz-desktop.png",
         },
       },
     ],

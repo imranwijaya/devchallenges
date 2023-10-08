@@ -58,6 +58,8 @@ export const inconsolata = Inconsolata({
  * `~/button-component/layout.tsx`
  *
  * `~/input-component/layout.tsx`
+ * 
+ * `~/country-quiz/layout.tsx`
  */
 export const poppins = Poppins({
   weight: "400",
