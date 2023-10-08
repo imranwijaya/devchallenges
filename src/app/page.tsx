@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               ))}
             </ul>
           ) : (
-            <div className="text-gray-600">Work In Progress</div>
+            <div className="text-gray-600">TODO</div>
           )}
           {/* FRONT-END DEVELOPER */}
           <h2 className="py-3 text-lg font-bold">Front-end Developer</h2>
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               ))}
             </ul>
           ) : (
-            <div className="text-slate-600">Work In Progress</div>
+            <div className="text-slate-600">TODO</div>
           )}
           {/* FULL-STACK DEVELOPER */}
           <h2 className="py-3 text-lg font-bold">Full-stack Developer</h2>
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
               ))}
             </ul>
           ) : (
-            <div className="text-gray-600">Work In Progress</div>
+            <div className="text-gray-600">TODO</div>
           )}
         </section>
       </main>

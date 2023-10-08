@@ -52,6 +52,7 @@ Solving this challenge was a great learning experience for me.
   - [Windbnb](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/windbnb)
   - [Todo app](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/todo-app)
   - [Random quote generator](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/random-quote-generator)
+  - [Country quiz](https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/country-quiz)
 - [**TODO**] Full-stack Developer
 
 ## Contact
