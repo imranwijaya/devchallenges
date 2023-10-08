@@ -164,6 +164,7 @@ export const QuestionProvider: NextPage<ProviderProps> = ({
       if (answer === _currentQuestion?.answer) {
         setIsAnswerCorrect(true);
         setScore((prev) => prev + 1);
+        setNumber((prev) => prev + 1);
       } else {
         setIsAnswerCorrect(false);
       }
@@ -171,11 +172,10 @@ export const QuestionProvider: NextPage<ProviderProps> = ({
     [_currentQuestion],
   );
 
-  const handleNextQuestion = useCallback(async () => {
+  const handleNextQuestion = useCallback(() => {
     setIsAnswerSelected(false);
     setSelectedAnswer("");
     setIsAnswerCorrect(false);
-    setNumber((prev) => prev + 1);
     setCurrentQuestion(_questions[_number]);
   }, [_questions, _number]);
 
@@ -187,7 +187,7 @@ export const QuestionProvider: NextPage<ProviderProps> = ({
     setStop(true);
   }, []);
 
-  const reset = () => {
+  const reset = useCallback(async () => {
     setQuestions(questions);
     setStart(start);
     setStop(stop);
@@ -198,8 +198,8 @@ export const QuestionProvider: NextPage<ProviderProps> = ({
     setScore(score);
     setCurrentQuestion(currentQuestion);
 
-    fetchQuestions();
-  };
+    await fetchQuestions();
+  }, []);
 
   const value = useMemo(
     () => ({
