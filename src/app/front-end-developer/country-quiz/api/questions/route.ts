@@ -6,7 +6,7 @@ import type {
   ApiErrorResponseBody,
 } from "../../types/api-response-body";
 
-// export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
