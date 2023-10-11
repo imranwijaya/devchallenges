@@ -1,7 +1,7 @@
 import "./globals.css";
-import "./nprogress.css";
+// import "./nprogress.css";
 import type { NextPage } from "next";
-import { monsterrat } from "@/utils/font";
+import { montserrat } from "@/utils/font";
 // import ProgressBar from "@/components/ProgressBar";
 
 type Props = { children: React.ReactNode };
@@ -9,7 +9,7 @@ type Props = { children: React.ReactNode };
 const RootLayout: NextPage<Props> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`${monsterrat.variable}`}>
+      <body className={`${montserrat.variable}`}>
         {children}
         {/* <ProgressBar /> */}
       </body>

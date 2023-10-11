@@ -24,6 +24,7 @@ const config: Config = {
         "ubuntu-mono": ["var(--font-ubuntu-mono)"],
         mulish: ["var(--font-mulish)"],
         raleway: ["var(--font-raleway)"],
+        montserrat: ["var(--font-montserrat)"],
       },
     },
   },

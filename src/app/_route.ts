@@ -1,49 +1,26 @@
 import type { StaticImageData } from "next/image";
 // RESPONSIVE WEB DEVELOPER
-import notFoundDesktop from "@public/asset/responsive-web-developer/screenshot/404-not-found-desktop.png";
-import myTeamPageDesktop from "@public/asset/responsive-web-developer/screenshot/my-team-page-desktop.png";
-import interiorConsultantDesktop from "@public/asset/responsive-web-developer/screenshot/interior-consultant-desktop.png";
-import recipePageDesktop from "@public/asset/responsive-web-developer/screenshot/recipe-page-desktop.png";
-import myGalleryDesktop from "@public/asset/responsive-web-developer/screenshot/my-gallery-desktop.png";
-import checkoutPageDesktop from "@public/asset/responsive-web-developer/screenshot/checkout-page-desktop.png";
-import edieHomepageDesktop from "@public/asset/responsive-web-developer/screenshot/edie-homepage-desktop.png";
-import portfolioDesktop from "@public/asset/responsive-web-developer/screenshot/portfolio-desktop.png";
-// FRONT-END DEVELOPER
-import buttonComponentDesktop from "@public/asset/front-end-developer/screenshot/button-component-desktop.png";
-import windbnbDesktop from "@public/asset/front-end-developer/screenshot/windbnb-desktop.png";
-import todoAppDesktop from "@public/asset/front-end-developer/screenshot/todo-app-desktop.png";
-import randomQuoteGeneratorDesktop from "@public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png";
-import countryQuizDesktop from "@public/asset/front-end-developer/screenshot/country-quiz-desktop.png";
+// JAVASCRIPT DEVELOPER
+// FRONTEND DEVELOPER
+// FULLSTACK DEVELOPER
 
 type ResponsiveWebDeveloper =
-  | "notFound"
-  | "myTeamPage"
-  | "interiorConsultant"
-  | "recipePage"
-  | "myGallery"
-  | "checkoutPage"
-  | "edieHomepage"
-  | "portfolio";
+  | "minimalBlogCard"
+  | "businessBlogCard"
+  | "testimonialPage"
+  | "contactPage"
+  | "simpleHomepageAlarado";
 
-type FrontEndDeveloper =
-  | "buttonComponent"
-  | "inputComponent"
-  | "windbnb"
-  | "todoApp"
-  | "randomQuoteGenerator"
-  | "countryQuiz"
-  | "weatherApp"
-  | "githubJobs";
+type JavascriptDeveloper =
+  | "multiStepRegisterForm"
+  | "musicPlayer"
+  | "guessTheWordGame"
+  | "randomQuote"
+  | "qaCodeGenerator";
 
-type FullStackDeveloper =
-  | "imageUploader"
-  | "myUnsplash"
-  | "catWiki"
-  | "authenticationApp"
-  | "shoppingify"
-  | "chatGroup"
-  | "tweeterTwitterClone"
-  | "thulloTrelloClone";
+// type FrontendDeveloper = "";
+
+// type FullstackDeveloper = "";
 
 type Page = {
   name: string;
@@ -67,18 +44,22 @@ type RouteObject = {
   responsiveWebDeveloper: SectionPage & {
     child: { [key in ResponsiveWebDeveloper]: Page };
   };
-  frontEndDeveloper: SectionPage & {
-    child: { [key in FrontEndDeveloper]?: Page };
+  javascriptDeveloper: SectionPage & {
+    child: { [key in JavascriptDeveloper]?: Page };
   };
-  fullStackDeveloper: SectionPage & {
-    child: { [key in FullStackDeveloper]?: Page };
-  };
+  // frontendDeveloper: SectionPage & {
+  //   child: { [key in FrontendDeveloper]?: Page };
+  // };
+  // fullstackDeveloper: SectionPage & {
+  //   child: { [key in FullstackDeveloper]?: Page };
+  // };
 };
 
 type RouteArray = {
   responsiveWebDeveloper: SectionPage & { child: Page[] };
-  frontEndDeveloper: SectionPage & { child: Page[] };
-  fullStackDeveloper: SectionPage & { child: Page[] };
+  javascriptDeveloper: SectionPage & { child: Page[] };
+  // frontendDeveloper: SectionPage & { child: Page[] };
+  // fullstackDeveloper: SectionPage & { child: Page[] };
 };
 
 export const routesObject: RouteObject = {
@@ -88,275 +69,119 @@ export const routesObject: RouteObject = {
     exact: false,
     section: "Responsive Web Developer",
     child: {
-      notFound: {
-        name: "404 Not Found",
-        href: "/responsive-web-developer/404-not-found",
+      minimalBlogCard: {
+        name: "Minimal Blog Card",
+        href: "/responsive-web-developer/minimal-blog-card",
         exact: true,
         section: "Responsive Web Developer",
-        image: notFoundDesktop,
-        readmeHref: "/responsive-web-developer/404-not-found/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/minimal-blog-card/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/404-not-found",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/minimal-blog-card",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/404-not-found",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/minimal-blog-card",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/404-not-found-desktop.png",
+            "/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/404-not-found-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
         },
       },
-      myTeamPage: {
-        name: "My team page",
-        href: "/responsive-web-developer/my-team-page",
+      businessBlogCard: {
+        name: "Business Blog Card",
+        href: "/responsive-web-developer/business-blog-card",
         exact: true,
         section: "Responsive Web Developer",
-        image: myTeamPageDesktop,
-        readmeHref: "/responsive-web-developer/my-team-page/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/business-blog-card/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/my-team-page",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/business-blog-card",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/my-team-page",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/business-blog-card",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/my-team-page-desktop.png",
+            "/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/my-team-page-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
         },
       },
-      interiorConsultant: {
-        name: "Interior Consultant",
-        href: "/responsive-web-developer/interior-consultant",
+      testimonialPage: {
+        name: "Testimonial Page",
+        href: "/responsive-web-developer/testimonial-page",
         exact: true,
         section: "Responsive Web Developer",
-        image: interiorConsultantDesktop,
-        readmeHref: "/responsive-web-developer/interior-consultant/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/testimonial-page/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/interior-consultant",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/testimonial-page",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/interior-consultant",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/testimonial-page",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/interior-consultant-desktop.png",
+            "/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/interior-consultant-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
         },
       },
-      recipePage: {
-        name: "Recipe page",
-        href: "/responsive-web-developer/recipe-page",
+      contactPage: {
+        name: "Contact Page",
+        href: "/responsive-web-developer/contact-page",
         exact: true,
         section: "Responsive Web Developer",
-        image: recipePageDesktop,
-        readmeHref: "/responsive-web-developer/recipe-page/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/contact-page/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/recipe-page",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/contact-page",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/recipe-page",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/contact-page",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/recipe-page-desktop.png",
+            "/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/recipe-page-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
         },
       },
-      myGallery: {
-        name: "My Gallery",
-        href: "/responsive-web-developer/my-gallery",
+      simpleHomepageAlarado: {
+        name: "Simple Homepage - Alarado",
+        href: "/responsive-web-developer/simple-homepage-alarado",
         exact: true,
         section: "Responsive Web Developer",
-        image: myGalleryDesktop,
-        readmeHref: "/responsive-web-developer/my-gallery/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/simple-homepage-alarado/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/my-gallery",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/simple-homepage-alarado",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/my-gallery",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/simple-homepage-alarado",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/my-gallery-desktop.png",
+            "/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/my-gallery-desktop.png",
-        },
-      },
-      checkoutPage: {
-        name: "Checkout Page",
-        href: "/responsive-web-developer/checkout-page",
-        exact: true,
-        section: "Responsive Web Developer",
-        image: checkoutPageDesktop,
-        readmeHref: "/responsive-web-developer/checkout-page/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/checkout-page",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/checkout-page",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/checkout-page-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/checkout-page-desktop.png",
-        },
-      },
-      edieHomepage: {
-        name: "Edie homepage",
-        href: "/responsive-web-developer/edie-homepage",
-        exact: true,
-        section: "Responsive Web Developer",
-        image: edieHomepageDesktop,
-        readmeHref: "/responsive-web-developer/edie-homepage/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/edie-homepage",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/edie-homepage",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/edie-homepage-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/edie-homepage-desktop.png",
-        },
-      },
-      portfolio: {
-        name: "Portfolio",
-        href: "/responsive-web-developer/portfolio",
-        exact: true,
-        section: "Responsive Web Developer",
-        image: portfolioDesktop,
-        readmeHref: "/responsive-web-developer/portfolio/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/portfolio",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/portfolio",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/portfolio-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/portfolio-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
         },
       },
     },
   },
-  frontEndDeveloper: {
-    name: "Front-end Developer",
-    href: "/front-end-developer",
+  javascriptDeveloper: {
+    name: "JavaScript Developer",
+    href: "/javascript-developer",
     exact: false,
-    section: "Front-end Developer",
-    child: {
-      buttonComponent: {
-        name: "Button component",
-        href: "/front-end-developer/button-component",
-        exact: true,
-        section: "Front-end Developer",
-        image: buttonComponentDesktop,
-        readmeHref: "/front-end-developer/button-component/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/button-component",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/button-component",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/button-component-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/button-component-desktop.png",
-        },
-      },
-      inputComponent: {
-        name: "Input component",
-        href: "/front-end-developer/input-component",
-        exact: true,
-        section: "Front-end Developer",
-        image: buttonComponentDesktop,
-        readmeHref: "/front-end-developer/input-component/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/input-component",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/input-component",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/input-component-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/input-component-desktop.png",
-        },
-      },
-      windbnb: {
-        name: "Windbnb",
-        href: "/front-end-developer/windbnb",
-        exact: true,
-        section: "Front-end Developer",
-        image: windbnbDesktop,
-        readmeHref: "/front-end-developer/windbnb/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/windbnb",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/windbnb",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/windbnb-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/windbnb-desktop.png",
-        },
-      },
-      todoApp: {
-        name: "Todo app",
-        href: "/front-end-developer/todo-app",
-        exact: true,
-        section: "Front-end Developer",
-        image: todoAppDesktop,
-        readmeHref: "/front-end-developer/todo-app/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/todo-app",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/todo-app",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/todo-app-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/todo-app-desktop.png",
-        },
-      },
-      randomQuoteGenerator: {
-        name: "Random quote generator",
-        href: "/front-end-developer/random-quote-generator",
-        exact: true,
-        section: "Front-end Developer",
-        image: randomQuoteGeneratorDesktop,
-        readmeHref: "/front-end-developer/random-quote-generator/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/random-quote-generator",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/random-quote-generator",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
-        },
-      },
-      countryQuiz: {
-        name: "Country quiz",
-        href: "/front-end-developer/country-quiz",
-        exact: true,
-        section: "Front-end Developer",
-        image: countryQuizDesktop,
-        readmeHref: "/front-end-developer/country-quiz/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/country-quiz",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/country-quiz",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/country-quiz-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/country-quiz-desktop.png",
-        },
-      },
-    },
-  },
-  fullStackDeveloper: {
-    name: "Full-stack Developer",
-    href: "/full-stack-developer",
-    exact: false,
-    section: "Full-stack developer",
+    section: "JavaScript Developer",
     child: {},
   },
+  // frontendDeveloper: {
+  //   name: "Frontend Developer",
+  //   href: "/frontend-developer",
+  //   exact: false,
+  //   section: "Frontend Developer",
+  //   child: {},
+  // },
+  // fullstackDeveloper: {
+  //   name: "Fullstack Developer",
+  //   href: "/fullstack-developer",
+  //   exact: false,
+  //   section: "Fullstack developer",
+  //   child: {},
+  // },
 };
 
 export const routesArray: RouteArray = {
@@ -367,272 +192,116 @@ export const routesArray: RouteArray = {
     section: "Responsive Web Developer",
     child: [
       {
-        name: "404 Not Found",
-        href: "/responsive-web-developer/404-not-found",
+        name: "Minimal Blog Card",
+        href: "/responsive-web-developer/minimal-blog-card",
         exact: true,
         section: "Responsive Web Developer",
-        image: notFoundDesktop,
-        readmeHref: "/responsive-web-developer/404-not-found/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/minimal-blog-card/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/404-not-found",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/minimal-blog-card",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/404-not-found",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/minimal-blog-card",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/404-not-found-desktop.png",
+            "/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/404-not-found-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
         },
       },
       {
-        name: "My team page",
-        href: "/responsive-web-developer/my-team-page",
+        name: "Business Blog Card",
+        href: "/responsive-web-developer/business-blog-card",
         exact: true,
         section: "Responsive Web Developer",
-        image: myTeamPageDesktop,
-        readmeHref: "/responsive-web-developer/my-team-page/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/business-blog-card/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/my-team-page",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/business-blog-card",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/my-team-page",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/business-blog-card",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/my-team-page-desktop.png",
+            "/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/my-team-page-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
         },
       },
       {
-        name: "Interior Consultant",
-        href: "/responsive-web-developer/interior-consultant",
+        name: "Testimonial Page",
+        href: "/responsive-web-developer/testimonial-page",
         exact: true,
         section: "Responsive Web Developer",
-        image: interiorConsultantDesktop,
-        readmeHref: "/responsive-web-developer/interior-consultant/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/testimonial-page/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/interior-consultant",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/testimonial-page",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/interior-consultant",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/testimonial-page",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/interior-consultant-desktop.png",
+            "/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/interior-consultant-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
         },
       },
       {
-        name: "Recipe page",
-        href: "/responsive-web-developer/recipe-page",
+        name: "Contact Page",
+        href: "/responsive-web-developer/contact-page",
         exact: true,
         section: "Responsive Web Developer",
-        image: recipePageDesktop,
-        readmeHref: "/responsive-web-developer/recipe-page/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/contact-page/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/recipe-page",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/contact-page",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/recipe-page",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/contact-page",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/recipe-page-desktop.png",
+            "/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/recipe-page-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
         },
       },
       {
-        name: "My Gallery",
-        href: "/responsive-web-developer/my-gallery",
+        name: "Simple Homepage - Alarado",
+        href: "/responsive-web-developer/simple-homepage-alarado",
         exact: true,
         section: "Responsive Web Developer",
-        image: myGalleryDesktop,
-        readmeHref: "/responsive-web-developer/my-gallery/readme",
+        // image: "",
+        readmeHref: "/responsive-web-developer/simple-homepage-alarado/readme",
         readmeContent: {
           demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/my-gallery",
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/simple-homepage-alarado",
           solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/my-gallery",
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/simple-homepage-alarado",
           screenshotLink:
-            "/asset/responsive-web-developer/screenshot/my-gallery-desktop.png",
+            "/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
           screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/my-gallery-desktop.png",
-        },
-      },
-      {
-        name: "Checkout Page",
-        href: "/responsive-web-developer/checkout-page",
-        exact: true,
-        section: "Responsive Web Developer",
-        image: checkoutPageDesktop,
-        readmeHref: "/responsive-web-developer/checkout-page/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/checkout-page",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/checkout-page",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/checkout-page-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/checkout-page-desktop.png",
-        },
-      },
-      {
-        name: "Edie homepage",
-        href: "/responsive-web-developer/edie-homepage",
-        exact: true,
-        section: "Responsive Web Developer",
-        image: edieHomepageDesktop,
-        readmeHref: "/responsive-web-developer/edie-homepage/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/edie-homepage",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/edie-homepage",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/edie-homepage-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/edie-homepage-desktop.png",
-        },
-      },
-      {
-        name: "Portfolio",
-        href: "/responsive-web-developer/portfolio",
-        exact: true,
-        section: "Responsive Web Developer",
-        image: portfolioDesktop,
-        readmeHref: "/responsive-web-developer/portfolio/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/portfolio",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/portfolio",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/portfolio-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/portfolio-desktop.png",
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
         },
       },
     ],
   },
-  frontEndDeveloper: {
-    name: "Front-end Developer",
-    href: "/front-end-developer",
+  javascriptDeveloper: {
+    name: "JavaScript Developer",
+    href: "/javascript-developer",
     exact: false,
-    section: "Front-end Developer",
-    child: [
-      {
-        name: "Button component",
-        href: "/front-end-developer/button-component",
-        exact: true,
-        section: "Front-end Developer",
-        image: buttonComponentDesktop,
-        readmeHref: "/front-end-developer/button-component/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/button-component",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/button-component",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/button-component-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/button-component-desktop.png",
-        },
-      },
-      {
-        name: "Input component",
-        href: "/front-end-developer/input-component",
-        exact: true,
-        section: "Front-end Developer",
-        image: buttonComponentDesktop,
-        readmeHref: "/front-end-developer/input-component/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/input-component",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/input-component",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/input-component-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/input-component-desktop.png",
-        },
-      },
-      {
-        name: "Windbnb",
-        href: "/front-end-developer/windbnb",
-        exact: true,
-        section: "Front-end Developer",
-        image: windbnbDesktop,
-        readmeHref: "/front-end-developer/windbnb/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/windbnb",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/windbnb",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/windbnb-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/windbnb-desktop.png",
-        },
-      },
-      {
-        name: "Todo app",
-        href: "/front-end-developer/todo-app",
-        exact: true,
-        section: "Front-end Developer",
-        image: todoAppDesktop,
-        readmeHref: "/front-end-developer/todo-app/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/todo-app",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/todo-app",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/todo-app-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/todo-app-desktop.png",
-        },
-      },
-      {
-        name: "Random quote generator",
-        href: "/front-end-developer/random-quote-generator",
-        exact: true,
-        section: "Front-end Developer",
-        image: randomQuoteGeneratorDesktop,
-        readmeHref: "/front-end-developer/random-quote-generator/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/random-quote-generator",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/random-quote-generator",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/random-quote-generator-desktop.png",
-        },
-      },
-      {
-        name: "Country quiz",
-        href: "/front-end-developer/country-quiz",
-        exact: true,
-        section: "Front-end Developer",
-        image: countryQuizDesktop,
-        readmeHref: "/front-end-developer/country-quiz/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/front-end-developer/country-quiz",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/front-end-developer/country-quiz",
-          screenshotLink:
-            "/asset/front-end-developer/screenshot/country-quiz-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/front-end-developer/screenshot/country-quiz-desktop.png",
-        },
-      },
-    ],
-  },
-  fullStackDeveloper: {
-    name: "Full-stack Developer",
-    href: "/full-stack-developer",
-    exact: false,
-    section: "Full-stack developer",
+    section: "JavaScript Developer",
     child: [],
   },
+  // frontendDeveloper: {
+  //   name: "Frontend Developer",
+  //   href: "/frontend-developer",
+  //   exact: false,
+  //   section: "Frontend Developer",
+  //   child: [],
+  // },
+  // fullstackDeveloper: {
+  //   name: "Fullstack Developer",
+  //   href: "/fullstack-developer",
+  //   exact: false,
+  //   section: "Fullstack developer",
+  //   child: [],
+  // },
 };

@@ -7,7 +7,7 @@ const nextConfig = {
   headers: async () => {
     return [
       {
-        source: "/front-end-developer/random-quote-generator/api/:path*",
+        source: "/legacy/front-end-developer/random-quote-generator/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
@@ -23,7 +23,7 @@ const nextConfig = {
         ],
       },
       {
-        source: "/front-end-developer/country-quiz/api/:path*",
+        source: "/legacy/front-end-developer/country-quiz/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
