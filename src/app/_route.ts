@@ -209,78 +209,78 @@ export const routesArray: RouteArray = {
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
         },
       },
-      {
-        name: "Business Blog Card",
-        href: "/responsive-web-developer/business-blog-card",
-        exact: true,
-        section: "Responsive Web Developer",
-        // image: "",
-        readmeHref: "/responsive-web-developer/business-blog-card/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/business-blog-card",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/business-blog-card",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
-        },
-      },
-      {
-        name: "Testimonial Page",
-        href: "/responsive-web-developer/testimonial-page",
-        exact: true,
-        section: "Responsive Web Developer",
-        // image: "",
-        readmeHref: "/responsive-web-developer/testimonial-page/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/testimonial-page",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/testimonial-page",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
-        },
-      },
-      {
-        name: "Contact Page",
-        href: "/responsive-web-developer/contact-page",
-        exact: true,
-        section: "Responsive Web Developer",
-        // image: "",
-        readmeHref: "/responsive-web-developer/contact-page/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/contact-page",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/contact-page",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
-        },
-      },
-      {
-        name: "Simple Homepage - Alarado",
-        href: "/responsive-web-developer/simple-homepage-alarado",
-        exact: true,
-        section: "Responsive Web Developer",
-        // image: "",
-        readmeHref: "/responsive-web-developer/simple-homepage-alarado/readme",
-        readmeContent: {
-          demoLink:
-            "https://devchallenges-solutions.vercel.app/responsive-web-developer/simple-homepage-alarado",
-          solutionLink:
-            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/simple-homepage-alarado",
-          screenshotLink:
-            "/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
-          screenshotGithubLink:
-            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
-        },
-      },
+      // {
+      //   name: "Business Blog Card",
+      //   href: "/responsive-web-developer/business-blog-card",
+      //   exact: true,
+      //   section: "Responsive Web Developer",
+      //   // image: "",
+      //   readmeHref: "/responsive-web-developer/business-blog-card/readme",
+      //   readmeContent: {
+      //     demoLink:
+      //       "https://devchallenges-solutions.vercel.app/responsive-web-developer/business-blog-card",
+      //     solutionLink:
+      //       "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/business-blog-card",
+      //     screenshotLink:
+      //       "/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
+      //     screenshotGithubLink:
+      //       "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
+      //   },
+      // },
+      // {
+      //   name: "Testimonial Page",
+      //   href: "/responsive-web-developer/testimonial-page",
+      //   exact: true,
+      //   section: "Responsive Web Developer",
+      //   // image: "",
+      //   readmeHref: "/responsive-web-developer/testimonial-page/readme",
+      //   readmeContent: {
+      //     demoLink:
+      //       "https://devchallenges-solutions.vercel.app/responsive-web-developer/testimonial-page",
+      //     solutionLink:
+      //       "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/testimonial-page",
+      //     screenshotLink:
+      //       "/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
+      //     screenshotGithubLink:
+      //       "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
+      //   },
+      // },
+      // {
+      //   name: "Contact Page",
+      //   href: "/responsive-web-developer/contact-page",
+      //   exact: true,
+      //   section: "Responsive Web Developer",
+      //   // image: "",
+      //   readmeHref: "/responsive-web-developer/contact-page/readme",
+      //   readmeContent: {
+      //     demoLink:
+      //       "https://devchallenges-solutions.vercel.app/responsive-web-developer/contact-page",
+      //     solutionLink:
+      //       "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/contact-page",
+      //     screenshotLink:
+      //       "/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
+      //     screenshotGithubLink:
+      //       "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
+      //   },
+      // },
+      // {
+      //   name: "Simple Homepage - Alarado",
+      //   href: "/responsive-web-developer/simple-homepage-alarado",
+      //   exact: true,
+      //   section: "Responsive Web Developer",
+      //   // image: "",
+      //   readmeHref: "/responsive-web-developer/simple-homepage-alarado/readme",
+      //   readmeContent: {
+      //     demoLink:
+      //       "https://devchallenges-solutions.vercel.app/responsive-web-developer/simple-homepage-alarado",
+      //     solutionLink:
+      //       "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/simple-homepage-alarado",
+      //     screenshotLink:
+      //       "/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
+      //     screenshotGithubLink:
+      //       "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
+      //   },
+      // },
     ],
   },
   javascriptDeveloper: {

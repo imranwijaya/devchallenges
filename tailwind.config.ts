@@ -25,6 +25,7 @@ const config: Config = {
         mulish: ["var(--font-mulish)"],
         raleway: ["var(--font-raleway)"],
         montserrat: ["var(--font-montserrat)"],
+        sora: ["var(--font-sora)"],
       },
     },
   },

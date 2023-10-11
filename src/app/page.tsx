@@ -1,6 +1,7 @@
 import type { NextPage, Metadata } from "next";
 import NextLink from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import { routesArray } from "./_route";
 
 export const metadata: Metadata = {
   title: "Home | devChallenges Solutions",
@@ -8,6 +9,8 @@ export const metadata: Metadata = {
 };
 
 const Home: NextPage = () => {
+  const rwd = routesArray.responsiveWebDeveloper.child;
+
   return (
     <div className="flex min-h-screen flex-col bg-[#181719] text-[rgba(189,189,189,1)] 2xl:container 2xl:mx-auto">
       <main className="flex grow flex-col">
@@ -18,7 +21,33 @@ const Home: NextPage = () => {
 
           {/* RESPONSIVE WEB DEVELOPER */}
           <h2 className="py-3 text-lg font-bold">Responsive Web Developer</h2>
-          <div className="text-gray-600">TODO</div>
+          {rwd.length > 0 ? (
+            <ul className="list-inside list-disc">
+              {rwd.map((e, idx) => (
+                <li key={idx}>
+                  <div className="inline-flex flex-col gap-y-2">
+                    <div className="inline-flex flex-row gap-x-2">
+                      <NextLink href={e.href} className="underline">
+                        {e.name}
+                      </NextLink>
+                      {/* {e.readmeHref && (
+                        <div>
+                          (
+                          <NextLink href={e.readmeHref} className="underline">
+                            readme
+                          </NextLink>
+                          )
+                        </div>
+                      )} */}
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="text-gray-600">TODO</div>
+          )}
+
           {/* JAVASCRIPT DEVELOPER */}
           <h2 className="py-3 text-lg font-bold">JavaScript Developer</h2>
           <div className="text-slate-600">TODO</div>
