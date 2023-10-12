@@ -1,5 +1,6 @@
 import type { StaticImageData } from "next/image";
 // RESPONSIVE WEB DEVELOPER
+import minimalBlogCardDesktop from "@public/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png";
 // JAVASCRIPT DEVELOPER
 // FRONTEND DEVELOPER
 // FULLSTACK DEVELOPER
@@ -35,6 +36,7 @@ type Page = {
     solutionLink: string;
     screenshotLink: string;
     screenshotGithubLink: string;
+    challengeLink: string;
   };
 };
 
@@ -74,7 +76,7 @@ export const routesObject: RouteObject = {
         href: "/responsive-web-developer/minimal-blog-card",
         exact: true,
         section: "Responsive Web Developer",
-        // image: "",
+        image: minimalBlogCardDesktop,
         readmeHref: "/responsive-web-developer/minimal-blog-card/readme",
         readmeContent: {
           demoLink:
@@ -85,6 +87,7 @@ export const routesObject: RouteObject = {
             "/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
+          challengeLink: "https://devchallenges.io/challenge/27",
         },
       },
       businessBlogCard: {
@@ -103,6 +106,7 @@ export const routesObject: RouteObject = {
             "/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
+          challengeLink: "https://devchallenges.io/challenge/28",
         },
       },
       testimonialPage: {
@@ -121,6 +125,7 @@ export const routesObject: RouteObject = {
             "/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/testimonial-page-desktop.png",
+          challengeLink: "https://devchallenges.io/challenge/29",
         },
       },
       contactPage: {
@@ -139,6 +144,7 @@ export const routesObject: RouteObject = {
             "/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/contact-page-desktop.png",
+          challengeLink: "https://devchallenges.io/challenge/31",
         },
       },
       simpleHomepageAlarado: {
@@ -157,6 +163,7 @@ export const routesObject: RouteObject = {
             "/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/simple-homepage-alarado-desktop.png",
+          challengeLink: "https://devchallenges.io/challenge/33",
         },
       },
     },
@@ -196,7 +203,7 @@ export const routesArray: RouteArray = {
         href: "/responsive-web-developer/minimal-blog-card",
         exact: true,
         section: "Responsive Web Developer",
-        // image: "",
+        image: minimalBlogCardDesktop,
         readmeHref: "/responsive-web-developer/minimal-blog-card/readme",
         readmeContent: {
           demoLink:
@@ -207,6 +214,7 @@ export const routesArray: RouteArray = {
             "/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
           screenshotGithubLink:
             "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png",
+          challengeLink: "https://devchallenges.io/challenge/27",
         },
       },
       // {

@@ -1,6 +1,6 @@
 <div align="center">
   
-  ![icon](https://raw.githubusercontent.com/imranwijaya/devchallenges/main/src/app/icon.png)
+  ![icon](https://raw.githubusercontent.com/imranwijaya/devchallenges/main/src/app/favicon.ico)
 
 </div>
 
@@ -36,7 +36,8 @@ Solving this challenge was a great learning experience for me.
 - [Tailwind](https://tailwindcss.com/)
 
 ## Solutions
-- Responsive Web Developer **(TODO)**
+- **Responsive Web Developer**
+  - [Minimal Blog Card](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/minimal-blog-card)
 - JavaScript Developer **(TODO)**
 - Frontend Developer **(TODO)**
 - Fullstack Developer **(TODO)**
