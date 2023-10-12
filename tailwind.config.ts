@@ -26,6 +26,7 @@ const config: Config = {
         raleway: ["var(--font-raleway)"],
         montserrat: ["var(--font-montserrat)"],
         sora: ["var(--font-sora)"],
+        lato: ["var(--font-lato)"],
       },
     },
   },

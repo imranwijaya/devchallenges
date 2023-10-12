@@ -1,6 +1,7 @@
 import type { StaticImageData } from "next/image";
 // RESPONSIVE WEB DEVELOPER
 import minimalBlogCardDesktop from "@public/asset/responsive-web-developer/screenshot/minimal-blog-card-desktop.png";
+import businessBlogCardDesktop from "@public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png";
 // JAVASCRIPT DEVELOPER
 // FRONTEND DEVELOPER
 // FULLSTACK DEVELOPER
@@ -95,7 +96,7 @@ export const routesObject: RouteObject = {
         href: "/responsive-web-developer/business-blog-card",
         exact: true,
         section: "Responsive Web Developer",
-        // image: "",
+        image: businessBlogCardDesktop,
         readmeHref: "/responsive-web-developer/business-blog-card/readme",
         readmeContent: {
           demoLink:
@@ -217,24 +218,25 @@ export const routesArray: RouteArray = {
           challengeLink: "https://devchallenges.io/challenge/27",
         },
       },
-      // {
-      //   name: "Business Blog Card",
-      //   href: "/responsive-web-developer/business-blog-card",
-      //   exact: true,
-      //   section: "Responsive Web Developer",
-      //   // image: "",
-      //   readmeHref: "/responsive-web-developer/business-blog-card/readme",
-      //   readmeContent: {
-      //     demoLink:
-      //       "https://devchallenges-solutions.vercel.app/responsive-web-developer/business-blog-card",
-      //     solutionLink:
-      //       "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/business-blog-card",
-      //     screenshotLink:
-      //       "/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
-      //     screenshotGithubLink:
-      //       "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
-      //   },
-      // },
+      {
+        name: "Business Blog Card",
+        href: "/responsive-web-developer/business-blog-card",
+        exact: true,
+        section: "Responsive Web Developer",
+        image: businessBlogCardDesktop,
+        readmeHref: "/responsive-web-developer/business-blog-card/readme",
+        readmeContent: {
+          demoLink:
+            "https://devchallenges-solutions.vercel.app/responsive-web-developer/business-blog-card",
+          solutionLink:
+            "https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/business-blog-card",
+          screenshotLink:
+            "/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
+          screenshotGithubLink:
+            "https://raw.githubusercontent.com/imranwijaya/devchallenges/main/public/asset/responsive-web-developer/screenshot/business-blog-card-desktop.png",
+          challengeLink: "https://devchallenges.io/challenge/28",
+        },
+      },
       // {
       //   name: "Testimonial Page",
       //   href: "/responsive-web-developer/testimonial-page",

@@ -1,4 +1,4 @@
-import { Montserrat, Sora } from "next/font/google";
+import { Montserrat, Sora, Lato, Poppins } from "next/font/google";
 
 /** used in `~/app/layout.tsx` */
 export const montserrat = Montserrat({
@@ -14,4 +14,20 @@ export const sora = Sora({
   subsets: ["latin"],
   style: "normal",
   variable: "--font-sora",
+});
+
+/** used in `~/business-blog-card/layout.tsx` */
+export const lato = Lato({
+  weight: "400",
+  subsets: ["latin"],
+  style: "normal",
+  variable: "--font-lato",
+});
+
+/** used in `~/business-blog-card/layout.tsx` */
+export const poppins = Poppins({
+  weight: "400",
+  subsets: ["latin"],
+  style: "normal",
+  variable: "--font-poppins",
 });
