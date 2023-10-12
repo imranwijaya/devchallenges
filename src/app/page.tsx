@@ -30,7 +30,7 @@ const Home: NextPage = () => {
                       <NextLink href={e.href} className="underline">
                         {e.name}
                       </NextLink>
-                      {/* {e.readmeHref && (
+                      {e.readmeHref && (
                         <div>
                           (
                           <NextLink href={e.readmeHref} className="underline">
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                           </NextLink>
                           )
                         </div>
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </li>

@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import NextLink from "next/link";
 import { sora } from "@/utils/font";
 import { routesObject } from "@/app/_route";
-import FloatingButton from "@/components/FloatingButton";
-import { BookOpenIcon, DocumentIcon } from "@heroicons/react/24/outline";
+// import FloatingButton from "@/components/FloatingButton";
+// import { BookOpenIcon, DocumentIcon } from "@heroicons/react/24/outline";
 
 type Props = { children: React.ReactNode };
 
@@ -15,10 +15,10 @@ const Layout: NextPage<Props> = ({ children }) => {
       <div
         className={`${sora.className} flex min-h-screen flex-col 2xl:container 2xl:mx-auto`}
       >
-        <main className="flex grow flex-col items-center justify-center p-2">
+        <main className="flex grow flex-col items-center justify-center p-2 lg:mx-auto lg:block lg:pt-[10.25rem]">
           {children}
         </main>
-        <footer className="sticky top-[100vh]">
+        {/* <footer className="sticky top-[100vh]">
           <p className="py-6 text-center font-monsterrat text-sm font-medium text-[#BDBDBD]">
             created by&nbsp;
             <NextLink
@@ -31,8 +31,8 @@ const Layout: NextPage<Props> = ({ children }) => {
             </NextLink>
             &nbsp;- devChallenges.io
           </p>
-        </footer>
-        <FloatingButton
+        </footer> */}
+        {/* <FloatingButton
           pageRoute={content.href}
           readmeRoute={content.readmeHref}
           pageComponent={
@@ -58,7 +58,7 @@ const Layout: NextPage<Props> = ({ children }) => {
               </div>
             </NextLink>
           }
-        />
+        /> */}
       </div>
     </div>
   );
