@@ -8,7 +8,12 @@ export const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-/** used in `~/minimal-blog-card/layout.tsx` */
+/** used in
+ * 
+ * `~/minimal-blog-card/layout.tsx`
+ * 
+ * `~/testimonial-page/layout.tsx`
+ */
 export const sora = Sora({
   weight: "400",
   subsets: ["latin"],

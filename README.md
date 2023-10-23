@@ -39,6 +39,7 @@ Solving this challenge was a great learning experience for me.
 - **Responsive Web Developer**
   - [Minimal Blog Card](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/minimal-blog-card)
   - [Business Blog Card](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/business-blog-card)
+  - [Testimonial Page](https://github.com/imranwijaya/devchallenges/tree/main/src/app/responsive-web-developer/testimonial-page)
 - JavaScript Developer **(TODO)**
 - Frontend Developer **(TODO)**
 - Fullstack Developer **(TODO)**
